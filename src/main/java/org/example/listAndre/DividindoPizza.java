@@ -6,9 +6,12 @@ public class DividindoPizza {
     static void main() {
         Scanner scanner = new Scanner(System.in);
 
-        int amigos = 10;
+
         System.out.println("Coloque o preço da pizza: ");
         double valorPizza = scanner.nextDouble();
+
+        System.out.println("Coloque a quantidade de amigos: ");
+        int amigos = scanner.nextInt();
 
         double divisao = valorPizza / amigos;
 

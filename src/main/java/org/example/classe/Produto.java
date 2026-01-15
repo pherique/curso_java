@@ -6,16 +6,18 @@ public class Produto {
     // Clase
     String nome;
     double preco;
-    double desconto; // entre 0 e 1;
+    static double desconto = 0.25  ; // entre 0 e 1;
 
     Produto(){
 
     }
 
-    Produto(String nomeIncial, double precoInicial, double descontoInicial){
+    Produto(String nomeIncial, double precoInicial){
         nome  = nomeIncial;
         preco = precoInicial;
-        desconto = descontoInicial;
+    }
+    double precoComDesconto(){
+        return preco * (1 - desconto);
     }
 
     double precoComDesconto(double descontoDoGerente){
