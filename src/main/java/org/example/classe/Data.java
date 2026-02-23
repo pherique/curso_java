@@ -13,9 +13,9 @@ public class Data {
     }
 
     public Data(int diaInicial, int mesInicial, int anoInicial){
-            dia = diaInicial;
-            mes = mesInicial;
-            ano = anoInicial;
+            this.dia = diaInicial;
+            this.mes = mesInicial;
+            this.ano = anoInicial;
     }
 
     String obterDataFormatada(){
